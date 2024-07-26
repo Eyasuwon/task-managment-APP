@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const username = document.getElementById('register-username').value;
         const password = document.getElementById('register-password').value;
 
-        const response = await fetch('api', {
+        const response = await fetch('/api/auth/Register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
